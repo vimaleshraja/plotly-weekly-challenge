@@ -6,13 +6,10 @@ app = Dash(
     __name__,
     use_pages=True,  # Enables multipage support
     suppress_callback_exceptions=True,
-    external_stylesheets=[dbc.themes.BOOTSTRAP]
+    external_stylesheets=[
+        dbc.themes.BOOTSTRAP,
+        dbc.icons.FONT_AWESOME
+    ]
 )
 
 server = app.server  # Needed for deployment (e.g. gunicorn/heroku)
-
-
-
-# Run the server
-if __name__ == "__main__":
-    app.run_server(debug=True, port=8050)

@@ -6,8 +6,7 @@ dash.register_page(__name__, path="/", name="Home")
 
 layout = html.Div(
     [
-        html.H1("Welcome to Plotly Weekly Tasks", className="display-4"),
-        html.P("This is your dashboard home page.", className="lead"),
-    ],
-    style={"padding": "20px"}
+        html.H1("Welcome to Home"),
+        html.P("Dashboard Overview")
+    ]
 )
